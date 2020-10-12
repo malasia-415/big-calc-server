@@ -4,7 +4,8 @@ module.exports = {
   "migrationDirectory": "migrations",
   "driver": "pg",
   "connectionString": (process.env.NODE_ENV === 'test')
-     ? 'postgresql://dunder-mifflin@localhost/calc-test'
-     : "postgresql://dunder-mifflin@localhost/calc",
+     ? 'postgresql://malasiawoods@localhost/calc-test'
+     : "postgresql://malasiawoods@localhost/calc",
      "ssl": !!process.env.SSL,
+     "timezone":"UTC"
 }
